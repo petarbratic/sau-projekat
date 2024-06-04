@@ -52,4 +52,14 @@ a2 = a(2);
 a3 = a(3);
 a4 = a(4);
 
+s = tf('s');
+
+I = eye(4);
+
+s*I - A
+
+G_s = C*((s*I-A)^-1)*B + D;
+
+nyquist(G_s);
+
 
